@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/66bac51810.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="weather.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading">
+        <h1>weather Forecast</h1>
+      </div>
+      <div class="header">
+        <div class="clock">
+          <div id="clock">
+            <span id="hours"></span>:<span id="minutes"></span>:<span
+              id="seconds"
+            ></span>
+          </div>
+          <div id="date"></div>
+        </div>
+        <div class="search">
+          <div class="content">
+            <input
+              type="text"
+              name="text"
+              class="input"
+              required=""
+              placeholder="Type to search..."
+            />
+            <div class="icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="ionicon"
+                viewBox="0 0 512 512"
+              >
+                <title>Search</title>
+                <path
+                  d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-miterlimit="10"
+                  stroke-width="32"
+                ></path>
+                <path
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-miterlimit="10"
+                  stroke-width="32"
+                  d="M338.29 338.29L448 448"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-sun-and-cloud">
+        <div class="box-shadow-sun-and-cloud"></div>
+        <div class="content-sun-and-cloud">
+          <div class="image-sun-and-cloud">
+            <div class="sun-inner"></div>
+            <div class="cloud-sun-inner"></div>
+          </div>
+          <div class="text-sun-and-cloud">
+            <p class="city">
+              bloemfontein, freedom
+              <i class="fa-solid fa-location-arrow fa-spin"></i>
+            </p>
+            <p class="day">MONDAY</p>
+            <p class="grade">16°C</p>
+          </div>
+        </div>
+      </div>
+      <div id="weather">
+        <div class="weather-container">
+          <div class="weather-data">
+            Real feel: <b>25°C</b>
+            <i class="fa-solid fa-temperature-three-quarters fa-2xl"></i>
+          </div>
+
+          <div class="weather-data">
+            Humidity: <b>60%</b>
+
+            <i class="fa-solid fa-smog fa-2xl"></i>
+          </div>
+
+          <div class="weather-data">
+            Wind: <b>10 mph NW</b>
+
+            <i class="fa-solid fa-wind fa-2xl"></i>
+          </div>
+          <div class="weather-data">
+            Pressure: <b>1013 hPa</b>
+            <i class="fa-solid fa-gauge fa-2xl"></i>
+          </div>
+        </div>
+
+        <div class="forecast-container">
+          <button class="weather-button">Show Weather Forecast</button>
+
+          <div class="weather-forecast">
+            <div class="weather-day">
+              <i class="weather-day-icon fas fa-sun" title="Sunny"></i>
+              <div class="weather-day-data">
+                <b>Monday</b>
+                <p>High: 25°C</p>
+                <p>Low: 15°C</p>
+              </div>
+            </div>
+
+            <div class="weather-day">
+              <i
+                class="weather-day-icon fas fa-cloud"
+                title="Partly Cloudy"
+              ></i>
+              <div class="weather-day-data">
+                <b>Tuesday</b>
+                <p>High: 22°C</p>
+                <p>Low: 12°C</p>
+              </div>
+            </div>
+
+            <div class="weather-day">
+              <i class="weather-day-icon fas fa-shower" title="Showers"></i>
+              <div class="weather-day-data">
+                <b>Wednesday</b>
+                <p>High: 20°C</p>
+                <p>Low: 10°C</p>
+              </div>
+            </div>
+
+            <div class="weather-day">
+              <i class="weather-day-icon fas fa-cloud-rain" title="Rainy"></i>
+              <div class="weather-day-data">
+                <b>Thursday</b>
+                <p>High: 18°C</p>
+                <p>Low: 8°C</p>
+              </div>
+            </div>
+
+            <div class="weather-day">
+              <i class="weather-day-icon fas fa-sun" title="Sunny"></i>
+              <div class="weather-day-data">
+                <b>Friday</b>
+                <p>High: 21°C</p>
+                <p>Low: 11°C</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="weather.js"></script>
+  </body>
+</html>
